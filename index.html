@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlantaGuard</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4fdf4;
+      color:#1d1d1d;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#1b5e20,#43a047);
+      color:white;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    header h1{
+      font-size:32px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#c8facc;
+    }
+
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.55);
+      padding:40px;
+      border-radius:20px;
+      max-width:800px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      background:#66bb6a;
+      color:white;
+      padding:14px 28px;
+      border:none;
+      border-radius:30px;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#2e7d32;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    section h2{
+      text-align:center;
+      font-size:40px;
+      color:#2e7d32;
+      margin-bottom:40px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      color:#2e7d32;
+      margin-bottom:15px;
+    }
+
+    .equipo{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:30px;
+    }
+
+    .miembro{
+      background:white;
+      width:280px;
+      padding:25px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .miembro img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:15px;
+    }
+
+    .contacto{
+      background:#1b5e20;
+      color:white;
+      border-radius:20px;
+      padding:50px;
+      text-align:center;
+    }
+
+    footer{
+      background:#0d3d14;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:35px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌱 PlantaGuard</h1>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#problema">Problema</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#competencia">Competencia</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#mejoras">Mejoras</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h2>Monitoreo Inteligente para Cultivos</h2>
+
+    <p>
+      PlantaGuard es un sistema tecnológico diseñado para ayudar a agricultores y comunidades rurales mediante sensores inteligentes que monitorean la humedad, temperatura y luz de los cultivos.
+    </p>
+
+    <a href="#servicios" class="btn">Conocer más</a>
+  </div>
+</section>
+
+<section id="problema">
+  <h2>🌾 Problemática</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Pérdida de cultivos</h3>
+      <p>
+        Muchos agricultores pierden cultivos por cambios climáticos, exceso de calor, falta de agua y plagas.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Falta de tecnología</h3>
+      <p>
+        En zonas rurales existen pocas herramientas accesibles para monitorear cultivos en tiempo real.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Desperdicio de recursos</h3>
+      <p>
+        El riego y fertilización manual pueden generar desperdicio de agua y productos agrícolas.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="clientes">
+  <h2>👨‍🌾 Clientes</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Agricultores</h3>
+      <p>
+        Personas encargadas de cultivos que necesitan monitorear sus plantas fácilmente.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Comunidades rurales</h3>
+      <p>
+        Zonas con poco acceso a tecnologías avanzadas para el cuidado agrícola.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Huertas escolares</h3>
+      <p>
+        Instituciones educativas interesadas en proyectos ambientales y tecnológicos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="competencia">
+  <h2>📊 Competencia</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Sistemas comerciales</h3>
+      <p>
+        Muchos dispositivos agrícolas son costosos y requieren internet permanente.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Aplicaciones genéricas</h3>
+      <p>
+        Existen apps para plantas domésticas, pero no adaptadas a cultivos rurales.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Diferencia de PlantaGuard</h3>
+      <p>
+        PlantaGuard es económico, sencillo y pensado específicamente para agricultores rurales.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <h2>⚙️ Servicios</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Monitoreo de humedad</h3>
+      <p>
+        Detecta cuándo el suelo necesita agua para evitar sequías o exceso de riego.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Monitoreo ambiental</h3>
+      <p>
+        Analiza temperatura y luz para mejorar el crecimiento de los cultivos.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fertilización inteligente</h3>
+      <p>
+        Sistema automatizado que distribuye nutrientes según las necesidades del cultivo.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Control de plagas</h3>
+      <p>
+        Dispensador inteligente de pesticidas naturales para proteger las plantas.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="mejoras">
+  <h2>🚀 Mejoras futuras</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Aplicación móvil</h3>
+      <p>
+        Visualización de datos en tiempo real desde el celular.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Panel solar</h3>
+      <p>
+        Alimentación sostenible para funcionar en zonas rurales.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Inteligencia artificial</h3>
+      <p>
+        Predicción de problemas en cultivos mediante análisis de datos.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="equipo">
+  <h2>👥 Equipo</h2>
+
+  <div class="equipo">
+
+    <div class="miembro">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png">
+      <h3>Ana Sofía Bahamón</h3>
+      <p>Líder del proyecto encargada de coordinar y supervisar el desarrollo general.</p>
+    </div>
+
+    <div class="miembro">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png">
+      <h3>Valeria Angrino</h3>
+      <p>Diseñadora encargada de la identidad visual, logo y presentación.</p>
+    </div>
+
+    <div class="miembro">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png">
+      <h3>Alejandro Jiménez</h3>
+      <p>Programador encargado del desarrollo en Java y conexión de sensores.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>📞 Contacto</h2>
+
+  <div class="contacto">
+    <h3>Contáctanos</h3>
+
+    <p>Email: plantaguard@gmail.com</p>
+    <p>Teléfono: +57 300 000 0000</p>
+    <p>Cali, Colombia</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 PlantaGuard | Tecnología para el futuro agrícola 🌱</p>
+</footer>
+
+</body>
+</html>
